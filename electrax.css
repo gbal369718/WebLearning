@@ -1,6 +1,6 @@
-body {
+/* body {
   margin-bottom: 100px;
-}
+} */
 
 p {
   color: var(--text--default--black-medium);
@@ -103,12 +103,13 @@ li a {
 }
 .cutting-edge {
   width: 65%;
-  background-image: url("plane.avif");
+  background-image: url("https://cdn.prod.website-files.com/670029dfe54e815631acec08/67002cc809e34f256f04030f_back%20of%20plane.avif");
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
+  background-size: contain;
 }
 .cutting-edge-2 {
   background-color: #fff;
@@ -141,8 +142,9 @@ li a {
   font-family: 16px;
 }
 .Engineered-2 {
-  background-image: url("plane2.avif");
+  background-image: url("https://cdn.prod.website-files.com/670029dfe54e815631acec08/67002cc9922a0ab5e0c3a61a_plane%20black%20background-p-2000.avif");
   background-repeat: no-repeat;
+  background-size: contain;
   background-size: cover;
   margin-left: 20px;
   height: 400px;
@@ -152,13 +154,13 @@ li a {
 .section-intro {
   margin-top: 100px;
   position: relative;
-  background-image: url("flying.avif");
+  background-image: url("https://cdn.prod.website-files.com/670029dfe54e815631acec08/67003d27fdf0f2e948ae0f31_flying%202%20bw.avif");
   height: 850px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: grid;
-  place-items: center; /* Corrected from `anchor-center` */
+  place-items: center;
   z-index: 1;
   overflow: hidden;
 }
@@ -168,7 +170,7 @@ li a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* You can adjust opacity/color here */
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
@@ -228,10 +230,12 @@ li a {
   color: #fff;
   margin-top: 50px;
   position: relative;
-  place-items: center; /* Corrected from `anchor-center` */
+  place-items: center;
   z-index: 1;
   overflow: hidden;
   transition: 0.4s;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .resources-img::before {
@@ -239,9 +243,99 @@ li a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* You can adjust opacity/color here */
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 .resources-img:hover {
   transform: translateY(-8px);
+}
+.avitaion {
+  background-image: url("https://cdn.prod.website-files.com/670029dfe54e815631acec08/67002cc9922a0ab5e0c3a61a_plane%20black%20background-p-2000.avif");
+  height: 100vh;
+  display: flex;
+  padding-left: 330px;
+  padding-right: 330px;
+  justify-content: space-between;
+  margin-top: 100px;
+  align-self: flex-end;
+  padding-bottom: 100px;
+}
+.avitaion-content {
+  align-content: end;
+}
+.button {
+  align-self: flex-end;
+}
+.avitaion h1 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-family: Work Sans, sans-serif;
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+.button li {
+  color: #fff;
+  padding: 15px;
+  border: 2px solid #fff;
+  width: fit-content;
+}
+.footer,
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 330px;
+  padding-right: 330px;
+  margin-top: 100px;
+  gap: 30px;
+}
+.footer-electrax-1 {
+  width: 40%;
+}
+.footer-electrax-2 {
+  width: 20%;
+}
+.footer-electrax-3 {
+  width: 20%;
+}
+.footer-electrax-4 {
+  width: 20%;
+}
+
+.footer li {
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+i {
+  /* padding: 15px; */
+  width: 60px;
+  height: 60px;
+  background-color: #efefef;
+  border-radius: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+  text-align: -webkit-center;
+  align-content: center;
+}
+i:hover {
+  background: #b5afaf;
+}
+.last-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 330px 50px 330px;
+}
+.licenses,
+.webflow {
+  display: flex;
+  gap: 20px;
+}
+
+.licenses li,
+.webflow li {
+  font-size: 20px;
+  cursor: pointer;
 }
